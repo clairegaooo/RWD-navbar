@@ -1,0 +1,51 @@
+<div class="menu">
+  <ul>
+
+    <li>
+      <span class="mark1"></span>
+      <span class="item">Talent</span>
+    </li>
+
+
+    <li (click)="connectionToggle()" style="cursor: pointer">
+      <span class="mark2"></span>
+      <span class="item">Connections</span>
+      <span [className]="showConnections ? 'fas fa-times' : 'fas fa-plus' "></span>
+    </li>
+    <ul class="sub-menu" *ngIf="showConnections">
+      <li>Pipelines</li>
+      <li>Requisition</li>
+      <li>Projects</li>
+    </ul>
+
+
+    <li  (click)="intelligenceToggle()" style="cursor: pointer">
+      <span class="mark3"></span>
+      <span class="item">Intelligence</span>
+      <span [className]="showIntelligence ? 'fas fa-times' : 'fas fa-plus' "></span>
+    </li>
+    <ul class="sub-menu" *ngIf="showIntelligence">
+      <li>Companies</li>
+      <li>Schools</li>
+    </ul>
+
+
+    <li>
+      <span class="mark4"></span>
+      <span class="item">Workspace</span>
+      <span class="fas fa-plus" style="color: #979797"></span>
+    </li>
+    <li>
+      <span class="mark5"></span>
+      <span class="item">Insights</span>
+    </li>
+    <li>
+      <span class="mark6"></span>
+      <span class="item" style="color: #979797;">
+        Johhny Appleseed &nbsp;
+        <span class="fas fa-chevron-down" style="font-size: 16px;"></span>
+      </span>
+    </li>
+  </ul>
+</div>
+

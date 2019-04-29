@@ -1,0 +1,23 @@
+<nav>
+  <ul>
+
+    <li><span class="icon i-menu fas fa-bars" (click)="toggleList()" *ngIf="!menuOn" id="btn"></span></li>
+    <li><span class="icon i-cross fas fa-times" (click)="toggleList()" *ngIf="menuOn"></span></li>
+    <li class="title">
+      <span class="icon i-logo fas fa-gem" style="line-height: 30px; font-size: 15px;"></span>
+      <span style="line-height: 35px; font-family: myriad_set_pro, sans-serif;" *ngIf="!menuOn">&nbsp;&nbsp;Talent Point</span>
+      <span style="line-height: 35px; font-family: myriad_set_pro, sans-serif;" *ngIf="menuOn">&nbsp;&nbsp;Recruitment</span>
+    </li>
+    <li><span class="icon i-search fas fa-search"></span></li>
+    <li>
+      <span class="icon i-bell far fa-bell"></span>
+      <span class="badge"></span>
+    </li>
+
+  </ul>
+</nav>
+
+<app-menu *ngIf="menuOn" id="menu"></app-menu>
+
+
+

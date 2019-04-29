@@ -1,0 +1,75 @@
+@import "../../../assets/font/font.css";
+
+* {
+  color: white;
+  font-size: 18px;
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 35px;
+  width: 100vw;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  color: white;
+}
+
+.i-menu {
+  position: absolute;
+  top: 5px;
+  left: 18px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.i-cross {
+  position: absolute;
+  top: 5px;
+  left: 25px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  margin-left: -55px;
+  top: 1px;
+}
+
+.i-search {
+  position: absolute;
+  right: 50px;
+  top: 5px;
+}
+.i-bell {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+}
+
+.badge {
+  position: absolute;
+  right: 32px;
+  top: 5px;
+  border-radius: 100%;
+  background-color: red;
+  width: 8px;
+  height: 8px;
+}
+
+span.icon {
+  font-size: 25px;
+}
+
+
+
+
+
